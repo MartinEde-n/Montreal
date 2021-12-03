@@ -25,19 +25,51 @@
 }
 
 .header-menu {
-	background-color: $yellow;
-	padding: 18px;
-
-	.header-menu__btn {
-		width: 17px;
-		margin: 0 auto;
-
+	.fon{
+		width: 50px;
+		height: 50px;
+		background-color: $yellow-text;
+		position: relative;
+	}
+	&__btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20px;
+		display: block;
+		cursor: pointer;
 		div {
 			width: 100%;
 			height: 2px;
 			margin-top: 4px;
 			background-color: $bg;
 		}
+	}
+	.header-menu__btn .open{
+		transform: rotateZ(450deg);
+	}
+	&__list{
+		display: none;
+		position: absolute;
+		background-color: $yellow-text;
+		color: $bg;
+		max-width: 400px;
+		width: 100%;
+		text-align: center;
+		top: 110px;
+		right: 0;	
+	
+		li{
+			a{
+				display: block;
+				border-bottom:1px solid ;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				color: $bg;
+				font-size: 25px;
+			}
+			}	
 	}
 }
 
@@ -84,12 +116,18 @@
 	padding-bottom: 92px;
 	font-size: 20px;
 	line-height: 25px;
+	&-text{
+		max-width: 969px;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 /*ADVANTAGES*/
 .advantages {
 	padding-top: 118px;
 	padding-bottom: 118px;
+
 }
 
 .advantages__inner-item {
@@ -99,7 +137,7 @@
 }
 
 .advantages-item {
-	max-width: 370px;
+	max-width: 363px;
 	margin-bottom: 107px;
 }
 
@@ -180,7 +218,6 @@
 
 .works {
 	padding-top: 120px;
-	padding-bottom: 118px;
 }
 
 .works__title {
@@ -199,6 +236,7 @@
 
 .works__inner-btn {
 	text-align: center;
+	margin-bottom: 30px;
 
 	button {
 		padding: 14px 37px 16px 36px;
@@ -208,6 +246,33 @@
 			margin-left: 27px;
 		}
 	}
+}
+.works__inner-box{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-left: -30px;	
+}
+.works__item{
+	height: 400px;
+	flex-basis:calc(33.33333% - 30px);
+	margin-left: 30px;
+	&-img{
+		width: 100%;
+		height: 300px;
+		display: block;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	&-title{
+		color: $bg;
+		font-weight: 600;
+		padding-top: 15px;
+	}
+}
+.mixitup-control-active{
+	background-color: $yellow;
 }
 
 /*SUPER*/
@@ -473,3 +538,23 @@ form {
 		}
 	}
 }
+
+
+.toTop {
+	width:50px;
+	height: 50px;
+	background-color: $yellow;
+	text-align:center;
+	position:fixed;
+	bottom:10px; /* отступ кнопки от нижнего края страницы*/
+	right:10px;
+	cursor:pointer;
+	color: $bg;
+	display:none;
+	img{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	}

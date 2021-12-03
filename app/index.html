@@ -24,12 +24,33 @@
 						<div class="header__inner-logo" style="background-image: url(image/Header/Logo.png);"></div>
 						<div class="header__inner-menu">
 							<nav class="header-menu">
-								<div class="header-menu__btn">
-									<div></div>
-									<div></div>
-									<div></div>
+								<div class="fon">
+									<div class="header-menu__btn">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
 								</div>
-								<div class="header-menu__list"></div>
+						
+								<div class="header-menu__list">
+									<ul>
+										<li>
+											<a href="#">HOME</a>
+										</li>
+										<li>
+											<a href="#">DESIGN</a>
+										</li>
+										<li>
+											<a href="#">CODING</a>
+										</li>
+										<li>
+											<a href="#">APPS</a>
+										</li>
+										<li>
+											<a href="#">CONTACT</a>
+										</li>
+									</ul>
+								</div>
 							</nav>
 						</div>
 					</div>
@@ -173,24 +194,66 @@
 					</div>
 					<div class="works__inner">
 						<div class="works__inner-btn">
-							<button>All</button>
+							<button type="button" data-filter="all">All</button>
 							<!--
-							--><button>Design</button>
-							<!--
-
-							--><button>Code</button>
+							--><button type="button" data-filter=".category-design">Design</button>
 							<!--
 
-							--><button>Photography</button>
+							--><button type="button" data-filter=".category-code">Code</button>
 							<!--
 
-							--><button>Apps</button>
+							--><button type="button" data-filter=".category-photography">Photography</button>
+							<!--
+
+							--><button type="button" data-filter=".category-apps">Apps</button>
 						</div>
 						<div class="works__inner-box">
-							<div class="works__inner-item">
-								<div class="inner-item__img"></div>
-								<div class="inner-item__title"></div>
-								<div class="inner-item__text"></div>
+							<div class="works__item mix category-code" data-order="1">
+								<div class="works__item-img" style="background-image: url(image/Content/works/works-2.jpg);"></div>
+								<div class="works__item-title">Responsive Mobile APP</div>
+								<div class="works__item-text">
+									Site Template
+								</div>
+							</div>
+
+							<div class="works__item mix category-design" data-order="2">
+								<div class="works__item-img" style="background-image: url(image/Content/works/works-2.jpg);"></div>
+								<div class="works__item-title">Responsive Mobile APP</div>
+								<div class="works__item-text">
+									Site Template
+								</div>
+							</div>
+
+							<div class="works__item mix category-photography" data-order="3">
+								<div class="works__item-img" style="background-image: url(image/Content/works/works-2.jpg);"></div>
+								<div class="works__item-title">Responsive Mobile APP</div>
+								<div class="works__item-text">
+									Site Template
+								</div>
+							</div>
+
+							<div class="works__item mix category-apps" data-order="4">
+								<div class="works__item-img" style="background-image: url(image/Content/works/works-2.jpg);"></div>
+								<div class="works__item-title">Responsive Mobile APP</div>
+								<div class="works__item-text">
+									Site Template
+								</div>
+							</div>
+
+							<div class="works__item mix category-code" data-order="4">
+								<div class="works__item-img" style="background-image: url(image/Content/works/works-2.jpg);"></div>
+								<div class="works__item-title">Responsive Mobile APP</div>
+								<div class="works__item-text">
+									Site Template
+								</div>
+							</div>
+
+							<div class="works__item mix category-apps" data-order="5">
+								<div class="works__item-img" style="background-image: url(image/Content/works/works-2.jpg);"></div>
+								<div class="works__item-title">Responsive Mobile APP</div>
+								<div class="works__item-text">
+									Site Template
+								</div>
 							</div>
 						</div>
 					</div>
@@ -290,7 +353,7 @@
 						<form action="">
 							<div class="contact__form-row">
 								<input type="text" placeholder="Name">
-								<input type="text" placeholder="Mail">
+								<input type="email" placeholder="Mail">
 							</div>
 							<input type="text" placeholder="Subject">
 							<textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
@@ -347,19 +410,25 @@
 					<img src="image/Content/icon/footer__icon-4.svg" alt="">
 					<img src="image/Content/icon/footer__icon-5.svg" alt="">
 				</div>
-				<div class="footer__rows">
+				<!-- <div class="footer__rows">
 					<a href="#"><img src="image/Content/icon/footer__icon-row.svg" alt=""></a>
 					
-				</div>
+				</div> -->
 			</div>
 
 		</div>
 
 	</div>
 
+	<div class = "toTop" > <img src="image/Content/icon/footer__icon-row.svg" alt=""></div >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/jquery.spincrement.js"></script>
 </body>
 
 </html>
+
+
+
+
